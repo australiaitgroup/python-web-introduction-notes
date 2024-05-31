@@ -28,14 +28,14 @@
 
 ## Module Four: Node.js
 
-- [Node 1](./4.Nodejs/Node_1.md)
-- [Node 2](./4.Nodejs/Node_2.md)
-- [Node 3](./4.Nodejs/Node_3.md)
-- [Node 4](./4.Nodejs/Node_4.md)
-- [Node 5](./4.Nodejs/Node_5.md)
-- [Node_tutorial 1](./4.Nodejs/Node_tutorial1.md)
-- [Node_tutorial 2](./4.Nodejs/Node_tutorial2.md)
-- [Node_tutorial 3](./4.Nodejs/Node_tutorial3.md)
+- [Node 1](./4.Node.js/Node_1.md)
+- [Node 2](./4.Node.js/Node_2.md)
+- [Node 3](./4.Node.js/Node_3.md)
+- [Node 4](./4.Node.js/Node_4.md)
+- [Node 5](./4.Node.js/Node_5.md)
+- [Node_tutorial 1](./4.Node.js/Node_tutorial1.md)
+- [Node_tutorial 2](./4.Node.js/Node_tutorial2.md)
+- [Node_tutorial 3](./4.Node.js/Node_tutorial3.md)
 
 ### Codes
 
