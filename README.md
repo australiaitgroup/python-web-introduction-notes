@@ -13,29 +13,29 @@
 
 ## Module Two: JavaScript
 
-- [JavaScript 1](./JavaScript/JavaScript_1.md)
-- [JavaScript 2](./JavaScript/JavaScript_2.md)
-- [JavaScript 3](./JavaScript/JavaScript_3.md)
-- [JavaScript_tutorial 1](./JavaScript/JavaScript_tutorial_1.md)
-- [JavaScript_tutorial 2](./JavaScript/JavaScript_tutorial_2.md)
-- [JavaScript_tutorial 3](./JavaScript/JavaScript_tutorial_3.md)
-- [JavaScript_tutorial 4](./JavaScript/JavaScript_tutorial_4.md)
+- [JavaScript 1](./2.JavaScript/JavaScript_1.md)
+- [JavaScript 2](./2.JavaScript/JavaScript_2.md)
+- [JavaScript 3](./2.JavaScript/JavaScript_3.md)
+- [JavaScript_tutorial 1](./2.JavaScript/JavaScript_tutorial_1.md)
+- [JavaScript_tutorial 2](./2.JavaScript/JavaScript_tutorial_2.md)
+- [JavaScript_tutorial 3](./2.JavaScript/JavaScript_tutorial_3.md)
+- [JavaScript_tutorial 4](./2.JavaScript/JavaScript_tutorial_4.md)
 
 ## Module Three：Git
 
-- [Git](./Git/Git.md)
+- [Git](./3.Git/Git.md)
 - [Git_tutorial](./Git/Git_tutorial.md)
 
 ## Module Four: Node.js
 
-- [Node 1](./Nodejs/Node_1.md)
-- [Node 2](./Nodejs/Node_2.md)
-- [Node 3](./Nodejs/Node_3.md)
-- [Node 4](./Nodejs/Node_4.md)
-- [Node 5](./Nodejs/Node_5.md)
-- [Node_tutorial 1](./Nodejs/Node_tutorial1.md)
-- [Node_tutorial 2](./Nodejs/Node_tutorial2.md)
-- [Node_tutorial 3](./Nodejs/Node_tutorial3.md)
+- [Node 1](./4.Nodejs/Node_1.md)
+- [Node 2](./4.Nodejs/Node_2.md)
+- [Node 3](./4.Nodejs/Node_3.md)
+- [Node 4](./4.Nodejs/Node_4.md)
+- [Node 5](./4.Nodejs/Node_5.md)
+- [Node_tutorial 1](./4.Nodejs/Node_tutorial1.md)
+- [Node_tutorial 2](./4.Nodejs/Node_tutorial2.md)
+- [Node_tutorial 3](./4.Nodejs/Node_tutorial3.md)
 
 ### Codes
 
@@ -47,19 +47,19 @@
 
 ## Module Five: Database
 
-- [Database 1](./Database/Database_1.md)
-- [Database_tutorial](./Database/Database_tutorial.md)
+- [Database 1](./5.Database/Database_1.md)
+- [Database_tutorial](./5.Database/Database_tutorial.md)
 
 ## Module Six: Python
 
-- [Python 1](./Python/Python_1.md)
-- [Python 2](./Python/Python_2.md)
-- [Python 3](./Python/Python_3.md)
-- [Python 4](./Python/Python_4.md)
-- [Python 5](./Python/Python_5.md)
-- [Python 6](./Python/Python_6.md)
-- [Python 7](./Python/Python_7.md)
-- [Python 8](./Python/Python_8.md)
+- [Python 1](./6.Python/Python_1.md)
+- [Python 2](./6.Python/Python_2.md)
+- [Python 3](./6.Python/Python_3.md)
+- [Python 4](./6.Python/Python_4.md)
+- [Python 5](./6.Python/Python_5.md)
+- [Python 6](./6.Python/Python_6.md)
+- [Python 7](./6.Python/Python_7.md)
+- [Python 8](./6.Python/Python_8.md)
 
 ## Module Seven: Final Project
 
