@@ -38,10 +38,6 @@
   - [font 的属性](#font-的属性)
     - [引用 Google Font 的两种方法](#引用-google-font-的两种方法)
   - [长度单位](#长度单位)
-- [课后作业](#课后作业)
-  - [制作 Gift Card](#制作-gift-card)
-  - [完成 Background CSS Practice](#完成-background-css-practice)
-  - [尝试写个人网站 Blog Page](#尝试写个人网站-blog-page)
 
 ## Resources
 
@@ -565,23 +561,3 @@ _网站上的元素都遵循 box model_
 绝对单位: px
 
 - **不**随 screen 宽度/高度, 变化而变化
-
-## 课后作业
-
-### 制作 Gift Card
-
-<https://www.davidjones.com/home-and-food/dining/glassware>
-
-```mermaid
-graph LR;
-    a["礼品卡html+css"]-->b["0基础"];
-    a-->c["有基础"];
-    c-->d["使用flexbox设置多个gift cards布局"];
-    b-->e["设计单个gift card"];
-```
-
-### 完成 Background CSS Practice
-
-<https://github.com/jessieyu1/intro-2-web-developmentV2/tree/main/practice/background-borders>
-
-### 尝试写个人网站 Blog Page
