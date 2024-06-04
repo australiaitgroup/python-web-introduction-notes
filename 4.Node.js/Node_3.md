@@ -33,8 +33,6 @@
 
 ## Node_3
 
-<p align='center'><img src='../image/nodejs.png' width='30%' height='30%' /></p>
-
 ### package.json vs package-lock.json vs node_modules
 
 |        package.json        |         package-lock.json          |    node_modules    |
@@ -43,15 +41,15 @@
 
 > ^2.29.4：表示可以使用 2.29.4 版本及其后续的次版本或修订版本, 但不包括 3.x.x 版本. 换句话说, 它允许在 2.x.x 版本范围内自动更新, 但不允许更新到 3.x.x 版本.
 
-`package.json和js中的object差别在于`
+package.json 和 js 中的 object 差别在于：
 
-- package.json 最后出现逗号会报错. js 的 object 最后的逗号是可选的
+- package.json 最后出现逗号会报错. js 的 object 最后的逗号是可选的。
 
 ### 模块化
 
 #### 什么是模块化
 
-> 遵循特定的规则, 把大文件拆成小文件<br>
+> 遵循特定的规则, 把大文件拆成小文件
 
 ```mermaid
 graph TB;
@@ -94,27 +92,21 @@ Node.js -> CommonJS 的规范
 - 'reg.js'和'login.js'是作为独立的模块被引入的
 - 这两个文件各自封装了其变量和函数,即使两个模块内部有相同的变量名，它们也不会互相影响
 
-<p align='center'><img src='../image/模块化的好处.png' width='80%' height='80%' /></p>
+![模块化的好处](../image/模块化的好处.png)
 
 #### module 对象
 
-- 每个.js 自定义模块中都有一个 module 对象，它里面存储了和当前模块有关的信息
-
-<hr>
+- 每个 `.js` 自定义模块中都有一个 module 对象，它里面存储了和当前模块有关的信息
 
 #### module.exports 对象
 
 - 自定义模块中，可以使用 module.exports 对象，将模块内的成员共享出去，供外界使用
-- 用 require()方法导入自定义模块是，得到的就是 module.exports 所指向的对象
-
-<hr>
+- 用 require() 方法导入自定义模块是，得到的就是 module.exports 所指向的对象
 
 #### 共享成员时的注意点及使用误区
 
 - 使用 require()方法导入模块时，导入的结果，永远以 module.exports 指向的对象为准
 - exports 和 module.exports 的使用误区
-
-<hr>
 
 #### Node.js 模块化规范
 
@@ -143,17 +135,17 @@ API: Application Programming Interface
 - 问：不使用 Express 能否创建 Web 服务器？
 - 答：能，使用 Node.js 提供的原生 http 模块即可
 
-<hr>
+---
 
 - 问：有了 http 内置模块，为什么还要用 Express？
 - 答：http 内置模块用起来复杂，开发效率低；Express 基于 http 进一步封装出现，能提高开发效率
 
-<hr>
+---
 
 - 问：http 内置模块与 Express 的关系？
 - 答：类似 Web.API 和 jQuery 的关系。后者是基于前者进一步封装出来的
 
-<hr>
+---
 
 ##### 安装 express 和 nodemon
 
@@ -192,9 +184,9 @@ app.get("/users/:id/:room", (req, res) => {
 app.listen(PORT, () => console.log("server is running on 8080."));
 ```
 
-> npx nodemon (启动 server + 实时更新)<br>
-> req.query 默认是{}, 可以使用?name=Chris&age=20 传输数据<br>
-> req.params 通过:匹配动态参数<br>
+> npx nodemon (启动 server + 实时更新)
+> req.query 默认是{}, 可以使用?name=Chris&age=20 传输数据
+> req.params 通过:匹配动态参数
 
 ### Express 中的路由
 
@@ -205,7 +197,7 @@ graph TB;
     a-->d["处理函数"];
 ```
 
-> 请求类型和请求 URL 同时匹配成功, Express 就会允许处理函数(从上到下匹配)<br>
+> 请求类型和请求 URL 同时匹配成功, Express 就会允许处理函数(从上到下匹配)
 
 #### 模块化路由
 
