@@ -41,25 +41,23 @@
 
 ## Node_5
 
-<p align='center'><img src='../image/nodejs.png' width='30%' height='30%' /></p>
-
 ### 中间件
 
 #### express 中间件的调用流程
 
 当一个请求到达 Express 的服务器后, 连续调用多个中间件, 对这次请求进行预处理
 
-<p align='center'><img src='../image/express中间件的调用流程.png' width='80%' height='80%' /></p>
+![](../image/express中间件的调用流程.png)
 
 #### express 中间件的格式
 
-<p align='center'><img src='../image/express middleware format.png' width='50%' height='50%' /></p>
+![]('../image/express middleware format.png)
 
 #### next 函数的作用
 
 next 函数是多个中间件调用的关键
 
-<p align='center'><img src='../image/next function.png' width='50%' height='50%' /></p>
+![](../image/next function.png)
 
 ```js
 const nw = function (req, res, next) {
@@ -86,8 +84,6 @@ const mw = function (req, res, next) {
 };
 ```
 
-<hr>
-
 ##### 全局生效的中间件
 
 > 客户端发起的任何请求达到服务器之后都会触发的中间件，叫全局生效中间件
@@ -104,8 +100,6 @@ const mw = function(req, res, next)
 app.use(mw)
 ```
 
-<hr>
-
 ##### 定义全局中间件的简化形式
 
 ```js
@@ -116,13 +110,9 @@ app.use(function (req, res, next) {
 });
 ```
 
-<hr>
-
 ##### 中间件的作用
 
-<p align='center'><img src='../image/中间件的作用.png' width='80%' height='80%' /></p>
-
-<hr>
+![](../image/中间件的作用.png)
 
 ##### 定义多个全局中间件
 
@@ -145,8 +135,6 @@ app.get("/user", (req, res) => {
 });
 ```
 
-<hr>
-
 ##### 局部生效的中间件
 
 > 不使用 app.use()定义的中间件，叫做局部生效的中间件，代码如下：
@@ -167,8 +155,6 @@ app.get("/user", function (req, res) {
 });
 ```
 
-<hr>
-
 ##### 定义多个局部中间件
 
 > 可以在路由中，通过等价的方式，使用多个局部中间件：
@@ -183,13 +169,14 @@ app.get("/", [mw1, mw2], (req, res) => {
 });
 ```
 
-<hr>
-
 ##### 了解中间件的 5 个使用注意事项
 
-> 1.一定要在`路由之前`注册中间件<br> 2.客户端发送过来的请求，`可以连续调用多个`中间件进行处理<br> 3.执行完中间件的业务代码之后，`不要忘记调用next()函数`<br> 4.为了`防止代码逻辑混乱`，调用 next()函数之后不要再写额外的代码<br> 5.连续调用多个中间件时，多个中间件之间，`共享`req 和 res 对象
+1.一定要在`路由之前`注册中间件 
+2.客户端发送过来的请求，`可以连续调用多个`中间件进行处理
+3.执行完中间件的业务代码之后，不要忘记调用next()函数 
+4.为了`防止代码逻辑混乱`，调用 next()函数之后不要再写额外的代码
+5.连续调用多个中间件时，多个中间件之间，`共享`req 和 res 对象
 
-<hr>
 
 #### 中间件的分类
 
@@ -209,8 +196,6 @@ app.get("/", mw1, (req, res) => {
 });
 ```
 
-<hr>
-
 ##### 路由级别的中间件
 
 - 是指绑定到 express.Router()实例上的中间件，用法和应用级别中间件没有任何区别
@@ -228,8 +213,6 @@ router.use(function(req, res next){
 
 app.use('/', router)
 ```
-
-<hr>
 
 ##### 错误级别的中间件
 
@@ -249,12 +232,12 @@ app.use(function (err, req, res, next) {
 });
 ```
 
-<hr>
-
 ##### Express 内置的中间件
 
 - 自 Express 4.16.0 版本开始，Express 内置了 3 个常用的中间件，提高开发效率：
-  > `express.static`：快速托管静态资源的内置中间件（HTML 文件\图片\CSS 样式等）<br> >`express.json`：解析 JSON 格式的请求数据（4.16.0+版本可用）<br> >`express.urlencoded`：解析 URL-encoded 格式的请求数据（4.16.0+版本可用）
+  - `express.static`：快速托管静态资源的内置中间件（HTML 文件\图片\CSS 样式等）
+  - `express.json`：解析 JSON 格式的请求数据（4.16.0+版本可用）
+  - `express.urlencoded`：解析 URL-encoded 格式的请求数据（4.16.0+版本可用）
 
 ```js
 // 配置解析application/json格式数据的内置中间件
@@ -263,13 +246,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 ```
 
-<hr>
-
 ##### 第三方的中间件
 
 - 非官方内置的第三方开发的中间件
 - 运行步骤：
-  > 1.运行 npm install body-parser 安装中间件<br> 2.使用 require 导入中间件<br> 3.调用 app.use() 注册并使用中间件
+  1.运行 npm install body-parser 安装中间件
+  2.使用 require 导入中间件
+  3.调用 app.use() 注册并使用中间件
 - 注意：Express 内置的 express.urlencoded 中间件，就是基于 body-parser 这个第三方中间件进一步封装出来的
 
 #### Express 练习
@@ -376,7 +359,7 @@ app.listen(8000, () => console.log("the server is running on port 8000"));
 
 ##### 中间件的作用
 
-<p align='center'><img src='../image/中间件的作用.png' width='80%' height='80%' /></p>
+![](../image/中间件的作用.png)
 
 #### index4.js & router.js
 
