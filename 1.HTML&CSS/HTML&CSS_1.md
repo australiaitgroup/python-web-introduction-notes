@@ -24,7 +24,6 @@
     - [form 标签](#form-标签)
     - [a 标签](#a-标签)
     - [语义化标签](#语义化标签)
-- [作业](#作业)
 
 ## HTML & CSS Part 1
 
@@ -333,11 +332,3 @@ Label 标签
 可以代替 div, 有助于搜索引擎优化
 
 `<header>, <nav>, <main>, <footer>, <article>, <section>, <aside>, <figure>, etc`
-
-### 作业
-
-- 在 freecodecamp 上练习
-- 尝试写个人 blog
-
-[FreeCodeCamp - Responsive Web Design](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
-[Dribbble - Blog Search](https://dribbble.com/search/search-blog)
