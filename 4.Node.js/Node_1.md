@@ -26,8 +26,6 @@
 
 ## Node_1
 
-<p align='center'><img src='../image/nodejs.png' width='30%' height='30%' /></p>
-
 ### 什么是 Node.js
 
 > Node.js is a JS runtime built on Chrome's V8 JS machine.
@@ -38,15 +36,11 @@
 
 `window.location.href`: 拿到 url
 
-<hr>
-
 ### Node.js 中的 JavaScript 运行环境
 
 - JS 前端的运行环境是浏览器\*
 - JS 后端的运行环境是 Node.js\*
   > Node.js 中无法调用 DOM 和 BOM 等浏览器内置方法
-
-<hr>
 
 #### Node.js 能做什么
 
@@ -57,8 +51,6 @@
 | Express  |       Web 应用        |
 | Electron |   跨平台的桌面应用    |
 | Restify  | 快速搭建 API 接口项目 |
-
-<hr>
 
 ### 浏览器解析引擎
 
@@ -71,13 +63,9 @@ _JS 后端的运行环境是 Node.js_
 
 > Node.js 中无法调用 DOM 和 BOM 等浏览器内置方法
 
-<hr>
-
 ### 后端开发语言
 
 Java/Python/PHP/Node.js
-
-<hr>
 
 #### node 能做什么
 
@@ -91,16 +79,12 @@ Java/Python/PHP/Node.js
 
 `JS基础语法 + node.js内置api + 第三方api`
 
-<hr>
-
 #### Node.js 怎么学
 
 - 浏览器中的 JavaScript 学习路径：
   <br/>`JavaScript基础语法 + 浏览器内置API(DOM + BOM) + 第三方库(jQuery、 art-template等)`
 - Node.js 的学习路径：
   <br/>`JavaScript基础语法 + Node.js内置API模块（fs、path、http等）+第三方API模块(express、mysql等)`
-
-<hr>
 
 ### 安装 node.js
 
@@ -115,8 +99,6 @@ Java/Python/PHP/Node.js
 npm i package_name
 ```
 
-<hr>
-
 ### 常见控制台代码
 
 _使用 node file_name 运行_
@@ -124,8 +106,6 @@ _使用 node file_name 运行_
 ```js
 console.log("hello world");
 ```
-
-<hr>
 
 ### 命令行指令
 
@@ -156,8 +136,6 @@ del file.txt 删除文件
 rd file 删除空文件夹
 ```
 
-<hr>
-
 ### JS 数据类型
 
 #### 8 种数据类型
@@ -172,8 +150,6 @@ console.log(BigInt(999999999)); //bigInt
 ```js
 let s = Symbol();
 ```
-
-<hr>
 
 ### 模块化
 
@@ -190,8 +166,6 @@ let s = Symbol();
 #### 加载模块
 
 - require（）方法
-
-<hr>
 
 #### 导出导入模块
 
