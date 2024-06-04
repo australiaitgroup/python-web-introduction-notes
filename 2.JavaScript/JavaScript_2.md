@@ -46,8 +46,6 @@
 
 ## JavaScript_2
 
-<p align='center'><img src='../image/js.png' width='30%' height='30%' /></p>
-
 ### if/else 结构
 
 ```js
@@ -152,8 +150,6 @@ switch (fruit) {
 }
 ```
 
-<hr>
-
 ### 循环
 
 #### 循环目的
@@ -213,8 +209,6 @@ while (i <= 100) {
 console.log("sum", sum);
 ```
 
-<hr>
-
 ### console.log 设置 filter
 
 ```js
@@ -223,8 +217,6 @@ console.log("feartureA average", 123);
 ```
 
 > 之后在 filter 中输入"featureA", 就能有针对性地看到结果
-
-<hr>
 
 ### Break 和 Continue
 
@@ -286,8 +278,6 @@ for (let i = 1; i <= 100; i++) {
 }
 console.log(sum); // 4315
 ```
-
-<hr>
 
 ### Array
 
@@ -486,8 +476,6 @@ console.log(arr.join(" ")); // "green blue red"
 ```
 
 > toString()和 join()不改变原数组
-
-<hr>
 
 ### Object
 
