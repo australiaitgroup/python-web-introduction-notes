@@ -34,14 +34,12 @@
 
 ## Resources
 
-[Python - Iterator](https://www.w3schools.com/python/python_iterators.asp)<br>
-[Python - List Comprehension](https://www.w3schools.com/python/python_lists_comprehension.asp)<br>
-[Python - Function](https://www.w3schools.com/python/python_functions.asp)<br>
-[Python - Packing&Unpacking](https://www.geeksforgeeks.org/packing-and-unpacking-arguments-in-python/)
+- [Python - Iterator](https://www.w3schools.com/python/python_iterators.asp)
+- [Python - List Comprehension](https://www.w3schools.com/python/python_lists_comprehension.asp)
+- [Python - Function](https://www.w3schools.com/python/python_functions.asp)
+- [Python - Packing&Unpacking](https://www.geeksforgeeks.org/packing-and-unpacking-arguments-in-python/)
 
 ## Python_4
-
-<p align='center'><img src='../image/python.png' width='30%' height='30%' /></p>
 
 ### VScode python setting (修复 deprecated warning)
 
@@ -115,24 +113,24 @@ for i in my_list:
 
 ### 数据结构
 
-- Abstract Data Structure <br>
-  `interface：干什么用和怎么用`<br>
-  `即通过更加复杂的存储方式来使数据产生不同特性，见上节课的对比表`
+- Abstract Data Structure 
+  - interface：干什么用和怎么用
+  - 即通过更加复杂的存储方式来使数据产生不同特性，见上节课的对比表
 
-<p align='center'><img src='../image/数据结构.png' width='50%' height='50%' /></p>
+![](../image/数据结构.png)
 
 #### 栈 - Stack
 
 - First In Last Out(特性)
-- Interface(干什么和怎么用 or 提供的接口):<br>
-  往里放 or 往外拿<br>
-  def push(x: Object)<br>
-  def pop() -> Object<br>
-  def len() -> int<br>
-  def empty() -> boolean
+- Interface(干什么和怎么用 or 提供的接口):
+  - 往里放 or 往外拿
+  - `def push(x: Object)`
+  - `def pop() -> Object`
+  - `def len() -> int`
+  - `def empty() -> boolean`
 - Depth First Search(深度优先搜索)
 
-<p align='center'><img src='../image/栈.png' width='50%' height='50%' /></p>
+![](../image/栈.png)
 
 #### 队列 - Queue
 
@@ -141,11 +139,11 @@ for i in my_list:
 - 实际中使用针对双向列表进行优化过的 deque 更适合
 - Breadth First Search(广度优先搜索)
 
-<p align='center'><img src='../image/队列.png' width='50%' height='50%' /></p>
+![](../image/队列.png)
 
 #### 树 - Tree
 
-- 有各种分类：
+- 有各种分类
 - 二叉树(BT)：每个节点最多有两个子节点的树结构
 - 二叉搜索树(BST)：二叉树的一种，其中每个节点的左子树中的所有节点的值小于节点的值，右子树中的所有节点值大于节点的值
 - 平衡二叉树：左右子树的高度差不超过 1，有助于提高检索效率
@@ -153,7 +151,7 @@ for i in my_list:
 - 2-3 树：一种平衡的搜索树，每个节点可以包含 2 个或 3 个键，并相应的有 2 个或 3 个子节点，能提高索引性能
 - 红黑树：一种自平衡的二叉搜索树，通过在每次加入新的数据之后再进行重新的排列以确保树的平衡
 
-<p align='center'><img src='../image/树.png' width='50%' height='50%' /></p>
+![](../image/树.png)
 
 #### 堆 - Heap
 
@@ -165,18 +163,20 @@ for i in my_list:
 - 但做题时最常用 heapq(单线程时优先，注重性能) or queue.PriorityQueue(多线程优先，注重安全)
 - queue.Queue(队列) queue.LifoQueue(栈)
 
-<p align='center'><img src='../image/堆.png' width='50%' height='50%' /></p>
+![](../image/堆.png)
 
 #### 图 - Graph
 
 - 表示图的两种方法：
-- 1.邻接表表示法(优势：省空间)：<br>
-  {<br>
-  1:[2,4], <br>
-  2:[1,4], <br>
-  3:[], <br>
-  4:[1,2] <br>
+- 1.邻接表表示法(优势：省空间)：
+  ```txt
+  {
+  1:[2,4], 
+  2:[1,4], 
+  3:[],
+  4:[1,2] 
   }
+  ```
 - 2.邻接矩阵表示法(优势：连接关系一目了然)：
 
 |     |  1  |  2  |  3  |  4  |
@@ -186,7 +186,7 @@ for i in my_list:
 |  3  |  F  |  F  |  F  |  F  |
 |  4  |  T  |  T  |  F  |  T  |
 
-<p align='center'><img src='../image/图.png' width='50%' height='50%' /></p>
+![](../image/图.png)
 
 ### Iterator (迭代器)
 
@@ -228,8 +228,8 @@ print([i for i in iter_a])  # []
 
 #### generator 和 iterator 的区别
 
-> generator 是一个特殊的 iterator<br>
-> generator 不需要一次性将整个序列存储在内存中 (剩内存), 使用 yield 生产值
+- generator 是一个特殊的 iterator
+- generator 不需要一次性将整个序列存储在内存中 (剩内存), 使用 yield 生产值
 
 ```python
 def inner_generator():
@@ -265,7 +265,7 @@ print(evens)  # [0, 2, 4, 6, 8]
 
 ### 函数
 
-<p align='center'><img src='../image/python function.png' width='50%' height='50%' /></p>
+![](../image/python function.png)
 
 ```python
 id()  #返回对象的标识符
@@ -297,7 +297,7 @@ f(6, item="banana", 1.74) # SyntaxError: positional argument follows keyword arg
 
 #### Default Parameters
 
-`无指定实参, 使用默认值; 有指定实参, 覆盖默认值`
+无指定实参, 使用默认值; 有指定实参, 覆盖默认值。
 
 ```python
 def test(qty=6, item="banana", price=1.74):
@@ -309,7 +309,7 @@ test(price=2.29) # 6 bananas cost $2.29
 #### return 关键字
 
 - 返回值
-- 终止 function, 避免执行剩下的语句
+- 终止 function，避免执行剩下的语句
 
 ### Packing & Unpacking
 
@@ -364,7 +364,7 @@ f(*a)  # <class 'tuple'> (1,2,3)
 f(a) # <class 'tuple'> ([1, 2, 3],)
 ```
 
-> 上面的代码成功将一个 list 变成了一个 tuple, f(*a)相当于做了 unpacking, 实际上是 f(1,2,3), *args 接受参数后, 将它们 pack 成元组. 直接用 f(a)不会得到想要的结果
+> 上面的代码成功将一个 list 变成了一个 tuple, f(*a)相当于做了 unpacking, 实际上是 f(1,2,3), *args 接受参数后, 将它们 pack 成元组. 直接用 f(a)不会得到想要的结果。
 
 #### Dictionary packing
 
@@ -422,12 +422,11 @@ print(reversed.__doc__)
 
 ### Funciton Annotations (函数注解)
 
-`避免开发者出现简单的type error. Python 3.0 版本引入了函数注解的概念, 但它们在 Python 3.5 版本中得到了进一步的发展和改进, 尤其是引入了类型提示的支持, 从而增强了代码的可读性和可维护性.`
+避免开发者出现简单的type error. Python 3.0 版本引入了函数注解的概念, 但它们在 Python 3.5 版本中得到了进一步的发展和改进, 尤其是引入了类型提示的支持, 从而增强了代码的可读性和可维护性。
 
-<div style='display:flex; justify-content: space-between'>
-    <img src='../image/python annotation.png' width='50%' />
-    <img src='../image/python annotation debug.png' width='50%' />
-</div>
+![](../image/python annotation.png)
+
+![](../image/python annotation debug.pn)
 
 ### 反转字符串
 
