@@ -539,16 +539,6 @@ h1::after {
 }
 ```
 
-## 作业
-
-### 完成 position 练习
-
-<https://github.com/jessieyu1/intro-2-web-developmentV2/tree/main/practice/position/practice1>
-
-### Flexbox CSS 练习
-
-<https://github.com/jessieyu1/intro-2-web-developmentV2/blob/main/PROTFOLIO/html/blog.html>
-
 ### 练习网站 50 个 JavaScript 项目
 
 https://github.com/bradtraversy/50projects50days
