@@ -29,11 +29,9 @@
 
 ## Node_tutorial
 
-<p align='center'><img src='../image/nodejs.png' width='30%' height='30%' /></p>
-
 ### 前端如何拿到后端数据?
 
-> `在前后端通信过程中，一般使用一些异步机制来处理请求和响应 (更好的用户体验-不堵塞程序). 后端可以返回前端一个promise`
+> `在前后端通信过程中，一般使用一些异步机制来处理请求和响应 (更好的用户体验-不堵塞程序)，后端可以返回前端一个promise。
 
 #### Promise 的三种情况
 
@@ -53,7 +51,7 @@ pie
 
 #### Promise 流程图
 
-_A promise is said to be `settled` if it is either fulfilled or rejected, but not pending._<br>
+A promise is said to be `settled` if it is either fulfilled or rejected, but not pending.
 
 ```mermaid
 flowchart LR
