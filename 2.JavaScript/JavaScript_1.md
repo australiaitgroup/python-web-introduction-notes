@@ -53,8 +53,6 @@
 
 ## JavaScript_1
 
-<p align='center'><img src='../image/js.png' width='30%' height='30%' /></p>
-
 ### 汇编语言和高级语言
 
 |                       汇编语言                       |                        高级语言                        |
