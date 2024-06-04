@@ -63,8 +63,6 @@ blog.html -> `http://www.example.com/blog.html`
 
 [下载链接](https://code.visualstudio.com/)
 
-![VScode](image/vscode.png)
-
 #### VScode 插件
 
 - Live Server (启动 server, 随代码更新实时更新网站)
