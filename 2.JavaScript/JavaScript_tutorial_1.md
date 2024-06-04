@@ -21,14 +21,10 @@
 
 ## JavaScript_tutorial_1
 
-<p align='center'><img src='../image/js.png' width='30%' height='30%' /></p>
-
 ### 为什么不用 div 要用 img/button 这些
 
 - 语义化
 - div 需要额外的 css/js 来实现 img/button 的默认效果
-
-<hr>
 
 ### h1 设置颜色/字体粗细
 
@@ -45,26 +41,18 @@ h1 {
 - 优先级比 inline 低, 防止个性化 class 失效
 - 复用性高, 容易控制
 
-<hr>
-
 ### 浏览器 Inspect
 
 f12 -> console/inspect element/network/etc
-
-<hr>
 
 ### JS 执行顺序
 
 顺序执行, 不加分号也能运行
 
-<hr>
-
 ### 命名变量
 
 避免使用 var (scope 冲突)
 使用 let/const
-
-<hr>
 
 ### 作用域
 
@@ -84,8 +72,6 @@ console.log(i); // 3
 console.log(c); // error
 ```
 
-<hr>
-
 ### array 遍历
 
 ```shell
@@ -96,8 +82,6 @@ flatmap -> 弥补了map方法length要一致的局限性, 一边filter一边有�
 filter -> 从原array挑选部分元素(新length < 原length)
 reduce -> 做累加等操作
 ```
-
-<hr>
 
 ### practice code
 
