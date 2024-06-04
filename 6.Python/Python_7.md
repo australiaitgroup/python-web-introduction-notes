@@ -16,13 +16,11 @@
 
 ## Resources
 
-[Pandas](https:/pandas.pydata.org/)<br>
-[Pygame Library Documentation](https://www.pygame.org/docs/)<br>
-[Snake game repo](https://github.com/ElevnLi/SnakeGame16)
+- [Pandas](https:/pandas.pydata.org/)
+- [Pygame Library Documentation](https://www.pygame.org/docs/)
+- [Snake game repo](https://github.com/ElevnLi/SnakeGame16)
 
 ## Python_7
-
-<p align='center'><img src='../image/snakegame.png' width='30%' height='30%' /></p>
 
 ### strict-policy-cross-origin
 
@@ -33,11 +31,11 @@
 />
 ```
 
-> strict-policy-cross-origin 是 Content Security Policy 的一部分, 意思是如果不满足同源策略, 就不允许跨域请求.
+strict-policy-cross-origin 是 Content Security Policy 的一部分, 意思是如果不满足同源策略, 就不允许跨域请求。
 
 ### 游戏的本质
 
-_OOP (Object-Oriented Programming)_
+OOP (Object-Oriented Programming)
 
 ```mermaid
 graph LR;
@@ -52,7 +50,7 @@ graph LR;
 
 #### 游戏中 consistency vs availability
 
-> 将游戏看成一个分布式系统
+将游戏看成一个分布式系统
 
 ```mermaid
 graph LR;
@@ -64,7 +62,7 @@ graph LR;
 
 #### The game loop
 
-<p align='center'><img src='../image/game loop.png' width='50%' height='50%' /></p>
+![](../image/game loop.png)
 
 ```mermaid
 graph LR;
@@ -72,11 +70,11 @@ graph LR;
     a-->c["game loop"];
 ```
 
-> 游戏的执行速度可能导致一些 inconsistency. 可以设置 Frame rate 解决
+> 游戏的执行速度可能导致一些 inconsistency. 可以设置 Frame rate 解决。
 
 ### JS event loop
 
-<p align='center'><img src='../image/js event loop.png' width='50%' height='50%' /></p>
+![](../image/js event loop.png)
 
 ```mermaid
 graph LR;
@@ -88,7 +86,7 @@ graph LR;
 
 ### Node.JS system
 
-<p align='center'><img src='../image/nodejs system.png' width='50%' height='50%' /></p>
+![](../image/nodejs system.png)
 
 ### Pygame Project
 
