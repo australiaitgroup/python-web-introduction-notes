@@ -27,18 +27,16 @@
 
 ## Resources
 
-[mysql](https://dev.mysql.com/downloads/installer/)<br>
-[DBeaver](https://dbeaver.io/download/)<br>
-[cars.sql](./cars.sql)<br>
-[cars.csv](./cars.csv)<br>
+- [mysql](https://dev.mysql.com/downloads/installer/)
+- [DBeaver](https://dbeaver.io/download/)
+- [cars.sql](./cars.sql)
+- [cars.csv](./cars.csv)
 
 ## Database
 
-<p align='center'><img src='../image/Database.png' width='30%' height='30%' /></p>
-
 ### 什么是数据库?
 
-- _储存`数据`的`仓库`_
+- 储存**数据**的**仓库**
 - 可以检索数据
 - 不同权限用户可以看不同的数据
 
@@ -48,11 +46,11 @@ graph TB;
     a -.-> c["DB"]
 ```
 
-<p align='center'><img src='../image/User-DBMS-DB.png' width='50%' height='50%' /></p>
+![](../image/User-DBMS-DB.png)
 
 #### 数据库组成
 
-<p align='center'><img src='../image/database composition.png' width='50%' height='50%' /></p>
+![](../image/database composition.png)
 
 #### 什么是数据?
 
@@ -143,7 +141,7 @@ erDiagram
 
 `bank transaction一般是选用relational DB`
 
-> realtional DB 有很好的 schema constrints 和 transaction management 能更好保证 data consistency.
+> realtional DB 有很好的 schema constrints 和 transaction management 能更好保证 data consistency。
 
 ##### ACID 性质
 
