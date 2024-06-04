@@ -52,8 +52,6 @@
 
 ## HTML & CSS Part 2
 
-<p align='center'><img src='../image/HTML&CSS.png' width='30%' height='30%' /></p>
-
 ### CSS 介绍
 
 Cascading Style Sheets
