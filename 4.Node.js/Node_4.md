@@ -27,21 +27,19 @@
 
 ## Resources
 
-[express static](https://expressjs.com/en/starter/static-files.html)<br>
+[express static](https://expressjs.com/en/starter/static-files.html)
 
 ## Node_4
-
-<p align='center'><img src='../image/nodejs.png' width='30%' height='30%' /></p>
 
 ### 状态码
 
 - 主要状态码类型
-<p align='center'><img src='../image/状态码.png' width='50%' height='50%' /></p>
+
+![状态码类型](../image/状态码.png)
 
 - 一般常见代码状态
-<p align='center'><img src='../image/常见代码状态.png' width='50%' height='50%' /></p>
 
-<hr>
+![常见状态码](../image/常见代码状态.png)
 
 ### 静态资源托管
 
@@ -76,7 +74,8 @@ app.use("./user", express.static("./files"));
 
 > 以"/public"开头的请求将从 "./public" 目录中提供文件; 以 "/user" 开头的请求将从 "./files" 目录中提供文件.
 
-http://localhost/public/1.html<br>
+http://localhost/public/1.html
+
 http://localhost/user/1.html
 
 ### CORS 跨域资源共享
@@ -102,13 +101,11 @@ http://localhost/user/1.html
 
 `一定在app.use(router)前使用app.use(cors())`
 
-<p align='center'><img src='../image/business-logic.png' width='50%' height='50%' /></p>
+![](../image/business-logic.png)
 
 #### 什么是 cors
 
-<p align='center'><img src='../image/什么是cors.png' width='70%' height='70%' /></p>
-
-<hr>
+![](../image/什么是cors.png)
 
 #### cors 注意事项
 
@@ -132,25 +129,17 @@ Acess-Control-Allow-Origin: <origin> | *
 res.setHeader("Acess-Control-Allow-Origin", "*");
 ```
 
-<hr>
-
 **Acess-Control-Allow-Origin-Headers**
 
-<p align='center'><img src='../image/Acess-Control-Allow-Origin-Headers.png' width='80%' height='80%' /></p>
-
-<hr>
+![](../image/Acess-Control-Allow-Origin-Headers.png)
 
 **Acess-Control-Allow-Origin-Methods**
 
-<p align='center'><img src='../image/Acess-Control-Allow-Origin-Methods.png' width='80%' height='80%' /></p>
-
-<hr>
+![](../image/Acess-Control-Allow-Origin-Methods.png)
 
 **简单请求**
 
-<p align='center'><img src='../image/简单请求.png' width='80%' height='80%' /></p>
-
-<hr>
+![](../image/简单请求.png)
 
 **预检请求**
 
@@ -158,8 +147,6 @@ res.setHeader("Acess-Control-Allow-Origin", "*");
   > 1. 请求方式为 GET、POST、HEAD 之外的请求 Method 类型
   > 2. 请求头中包含自定义头部字段
   > 3. 向服务器发送了 application/json 格式的数据
-
-<hr>
 
 **简单请求和预检请求的区别**
 
@@ -171,13 +158,13 @@ res.setHeader("Acess-Control-Allow-Origin", "*");
 一种设计风格: 请求和响应简洁, 可读性强
 一个架构符合 REST 原则, 就称它符合 RESTful 架构
 
-<p align='center'><img src='../image/REST基本原则.png' width='50%' height='50%' /></p>
+![](../image/REST基本原则.png)
 
 > URL 中名词应该用复数
 
 #### http 动词
 
-<p align='center'><img src='../image/http动词.png' width='50%' height='50%' /></p>
+![](../image/http动词.png)
 
 ##### get vs post
 
@@ -189,7 +176,7 @@ res.setHeader("Acess-Control-Allow-Origin", "*");
 
 #### http 状态码
 
-<p align='center'><img src='../image/http status codes.png' width='50%' height='50%' /></p>
+![](../image/http status codes.png)
 
 ### User list 后端练习
 
