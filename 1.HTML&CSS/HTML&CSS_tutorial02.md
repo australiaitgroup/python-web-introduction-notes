@@ -14,10 +14,6 @@
   - [块级元素居中](#块级元素居中)
   - [练习](#练习)
 
-<p align='center'><img src='../image/HTML&CSS.png' width='30%' height='30%' /></p>
-
----
-
 ## HTML & CSS Tutorial
 
 ### CSS 基本选择器
