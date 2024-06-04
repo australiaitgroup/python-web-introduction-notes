@@ -48,8 +48,6 @@
 
 ## JavaScript_3
 
-<p align='center'><img src='../image/js.png' width='30%' height='30%' /></p>
-
 ### 函数
 
 > for 循环语句能实现简单的重复操作，但有局限性，另一个方法是定义函数。
@@ -259,7 +257,7 @@ console.log(getStr()); // undefined
 
 ### 作用域
 
-> ES6 之前: 全局作用域+局部作用域(函数作用域)<br>
+> ES6 之前: 全局作用域+局部作用域(函数作用域)
 > ES6 后: 块级作用域 (let/const)
 
 _obj 本身不构成作用域_
