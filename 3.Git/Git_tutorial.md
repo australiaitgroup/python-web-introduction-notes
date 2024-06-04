@@ -34,8 +34,6 @@
 
 ## Git tutorial
 
-<p align='center'><img src='../image/GitHub.png' width='30%' height='30%' /></p>
-
 ### 常见 git 指令
 
 - git init: 创建一个新 repo
@@ -75,9 +73,7 @@
 | :------------------------------------------------------------: | :------------------------------------: |
 | **_一般使用--cached 来删除暂存区文件, 保留本地文件,可以恢复_** | **_Unix/Linux 系统级别指令,很难恢复_** |
 
-> 如果不小心在子文件夹使用 git init. 可以 cd 后执行"rm -rf .git"来撤销这步 git init 操作同时保留子文件夹内容 (不用完全删除子文件夹).
-
-<hr>
+> 如果不小心在子文件夹使用 git init. 可以 cd 后执行"rm -rf .git"来撤销这步 git init 操作同时保留子文件夹内容 (不用完全删除子文件夹)。
 
 ### git rebase/git reset/git commit --amend 的区别
 
@@ -116,13 +112,13 @@ git push origin branch --force-with-lease
 
 #### git rebase 操作
 
-`丢弃rebase的修改`
+丢弃rebase的修改：
 
 ```bash
 git rebase --abort
 ```
 
-`查看commit的数量`
+查看commit的数量：
 
 ```bash
 git log --oneline | wc -l
@@ -154,13 +150,13 @@ graph LR;
 
 ### 常规 commit&push(git add. && git commit -m "msg" && git push)
 
-_无论本地 repo 的所有文件是不是 tracked, 保险的方式是使用 git add .将工作区所有修改添加到暂存区, 全部的指令如下_
+无论本地 repo 的所有文件是不是 tracked, 保险的方式是使用 git add .将工作区所有修改添加到暂存区, 全部的指令如下：
 
 ```bash
 git add. && git commit -m "msg" && git push
 ```
 
-`如果觉得上面的代码很长, 可以在~/.bash_profile中添加一个方法`
+如果觉得上面的代码很长, 可以在 `~/.bash_profile` 中添加一个方法。
 
 ```bash
 gitpush() {
@@ -320,8 +316,6 @@ echo -> 打印/写入文件
 # echo 'string' >> filename 把string添加到file内容最后
 ```
 
-<hr>
-
 ### cloud shell 练习
 
 <https://console.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/praqma-training/git-katas.git>
@@ -338,5 +332,3 @@ git config --global user.name "xxx"
 ## Git and GitHub for Beginners Tutorial
 
 https://www.youtube.com/watch?v=tRZGeaHPoaw
-
-### 本地仓库
