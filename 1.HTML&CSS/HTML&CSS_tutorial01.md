@@ -22,10 +22,6 @@
       - [DOM 中 HTMDivElement 继承关系](#dom-中-htmdivelement-继承关系)
   - [练习](#练习)
 
-<p align='center'><img src='../image/HTML&CSS.png' width='30%' height='30%' /></p>
-
----
-
 ## HTML Tutorial
 
 ### 练习网站
