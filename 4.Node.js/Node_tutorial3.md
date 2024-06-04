@@ -22,49 +22,34 @@
     - [上节课的 bug](#上节课的-bug)
     - [更新留言功能](#更新留言功能)
     - [获取和增加留言功能](#获取和增加留言功能)
-    <hr>
-
-<p align='center'><img src='../image/Nodejs.png' width='30%' height='30%' /></p>
-
-<hr>
 
 ## Nodejs_tutorial
 
 ### 答疑
 
-- why undefined?
-<p align='center'><img src='../image/whyUndefined.png' width='80%' height='80%' /></p>
+why undefined?
 
-`原因：console.log return的值为undefined，所以return totalCost这个方法时会输出 undefined的结果`
+![](../image/whyUndefined.png)
 
-<hr>
-<br>
+原因：console.log return的值为undefined，所以return totalCost这个方法时会输出 undefined的结果。
 
 ### 复习
 
 #### RESTFul
 
-<p align='center'><img src='../image/6PopularAPIStyles.png' width='80%' height='80%' /></p>
-
-<hr>
+![](../image/6PopularAPIStyles.png)
 
 ##### url
 
-<p align='center'><img src='../image/WhyIsRestfulApiPop.png' width='80%' height='80%' /></p>
-
-<hr>
+![](../image/WhyIsRestfulApiPop.png)
 
 ##### request body
 
-<p align='center'><img src='../image/requestBody.png' width='80%' height='80%' /></p>
-
-<hr>
+![](../image/requestBody.png)
 
 ##### status code
 
-<p align='center'><img src='../image/statusCode.png' width='80%' height='80%' /></p>
-
-<hr>
+![](../image/statusCode.png)
 
 #### 前端请求数据
 
@@ -75,12 +60,6 @@ const response1 = await axios.put(url,{}) //variable
 const response2 = await axios.put(url,{
 response1.bookingId})
 ```
-
-<hr>
-
-##### ajax
-
-<hr>
 
 ##### fetch
 
@@ -115,8 +94,6 @@ promise.then((response)=>{
 request1:userId->bookingId
 request2:bookingId->emailList
 ```
-
-<hr>
 
 #### 中间件
 
@@ -153,17 +130,17 @@ class MyExpress {
 }
 ```
 
-- 使用同步函数处理异步请求
-<p align='center'><img src='../image/使用同步函数处理异步请求1.png' width='80%' height='80%' /></p>
+使用同步函数处理异步请求：
 
-`每个中间件内部都调用了next()函数，即在当前中间件完成执行之前就将控制权传递给了下一个中间件`
+![](../image/使用同步函数处理异步请求1.png)
 
-<p align='center'><img src='../image/使用同步函数处理异步请求2.png' width='80%' height='80%' /></p>
+每个中间件内部都调用了next()函数，即在当前中间件完成执行之前就将控制权传递给了下一个中间件。
 
-`在这个处理程序内部，有一个setTimeout函数，它通过延迟1000毫秒来推迟其回调函数的执行`<br>
-`Middleware1 end出现在index router日志之前。表明事件循环在处理路由处理程序的延迟执行之前执行`
+![](使用同步函数处理异步请求2.png)
 
-<hr>
+- 在这个处理程序内部，有一个setTimeout函数，它通过延迟1000毫秒来推迟其回调函数的执行。
+
+- Middleware1 end出现在index router日志之前。表明事件循环在处理路由处理程序的延迟执行之前执行。
 
 ##### 两种中间件
 
@@ -185,9 +162,6 @@ app.use(middleware);
 ##### cors
 
 - `Access-Control-Allow-Origin:*`
-
-<hr>
-<br>
 
 ### 练习
 
@@ -238,8 +212,6 @@ router.delete('/:id', function(req, res) {
 });
 ```
 
-<hr>
-
 #### 更新留言功能
 
 ```js
@@ -272,8 +244,6 @@ router.put("/:id", async function (req, res) {
 });
 ```
 
-<hr>
-
 #### 留言板前端界面
 
 ```html
@@ -297,8 +267,6 @@ router.put("/:id", async function (req, res) {
     </body>
 </html>
 ```
-
-<hr>
 
 #### 获取和增加留言功能
 
