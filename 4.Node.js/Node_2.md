@@ -27,8 +27,6 @@
 
 ## Node_2
 
-<p align='center'><img src='../image/nodejs.png' width='30%' height='30%' /></p>
-
 ### fs 模块: 读取 + 写入文件
 
 _fs 模块是 Node.js 官方提供的, 用来操作文件的模块_<br>
@@ -119,8 +117,6 @@ fs.readFile("./score.txt", "utf8", function (err, data) {
 });
 ```
 
-<hr>
-
 ### http 模块: 创建 web 服务器
 
 #### 什么是 http 模块
@@ -199,8 +195,6 @@ server.on("request", (req, res) => {
   res.end(content);
 });
 ```
-
-<hr>
 
 ### npm 包管理和使用
 
