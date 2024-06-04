@@ -27,44 +27,35 @@
 
 ## Python_6
 
-<p align='center'><img src='../image/python.png' width='30%' height='30%' /></p>
-
 ### Python 的装饰器
 
 - 概念：允许你再不修改原有函数代码的情况下，增加额外的功能
 - 装饰器(Decorator)本质上是一个函数，可以接受一个函数作为参数，并返回一个新的函数
 - input wrapper 示例
 
-<br>
-<p align='center'><img src='../image/decorator.png' width='80%' height='80%' /></p>
-<br>
+![](../image/decorator.png)
 
 - output wrapper 示例(此时注意需要 call 两次才能生效)
 
-<br>
-<p align='center'><img src='../image/decorator1.png' width='80%' height='80%' /></p>
-<br>
+![](../image/decorator1.png)
 
 - @decorator 的一些用法
 
-<br>
-<p align='center'><img src='../image/decorator2.png' width='80%' height='80%' /></p>
-<br>
+![](../image/decorator2.png)
 
 - decoratorde 可能的实际应用场景
 
-<br>
-<p align='center'><img src='../image/decorator3.png' width='50%' height='50%' /></p>
+![](../image/decorator3.png)
 
 ### Python OOP
 
 blue print: 蓝图, 图纸 -> reusable
 
-<p align='center'><img src='../image/Python OOP.png' width='50%' height='50%' /></p>
+![](../image/Python OOP.png)
 
 ### 为什么需要 class
 
-> 当很多 objects 具有相同属性和行为时, 我们没必要一个一个 object 定义; 用同一个 class 实例化对象可以减少代码.
+> 当很多 objects 具有相同属性和行为时, 我们没必要一个一个 object 定义; 用同一个 class 实例化对象可以减少代码。
 
 #### object 的 state 和 behavior
 
@@ -73,7 +64,7 @@ blue print: 蓝图, 图纸 -> reusable
 
 #### class attribute vs object attribute
 
-<p align='center'><img src='../image/class attribute vs object attribute.png' width='50%' height='50%' /></p>
+![](../image/class attribute vs object attribute.png)
 
 #### class attribute vs object attribute demo
 
@@ -99,12 +90,12 @@ print(s2.school_name) # JR_2
 
 ### namespace 中的**module**
 
-> '**module**': '**main**': class 在主程序中定义<br>
-> '**module**': 'teacher': class 在 teacher.py 中定义
+- '**module**': '**main**': class 在主程序中定义
+- '**module**': 'teacher': class 在 teacher.py 中定义
 
 #### obj.attribute_name 的查找流程
 
-> 先找 object 的 namespace 再找 class 的 namespace
+先找 object 的 namespace 再找 class 的 namespace。
 
 #### class 中使用 type annoation
 
@@ -119,7 +110,7 @@ s3 = Student(1)
 print(s3.name) # 1
 ```
 
-> type annotation 不会对运行程序造成影响, 只起到提示作用
+> type annotation 不会对运行程序造成影响, 只起到提示作用。
 
 ### attribute 的三种属性
 
@@ -167,18 +158,15 @@ graph TB;
 - 封装还包括了信息隐藏的概念，即从外部代码隐藏内部数据和实现细节
 - 这通常是通过访问（如 public、private、protected）来实现的
 - 实例：
-<br>
-<p align='center'><img src='../image/Encapsulation.png' width='50%' height='50%' /></p>
-<br>
 
-_不带下划线的调用称为 public member，可在 class 内外调用_
-<br>
-_带一个下划线叫做 protected member，只能在 class 内及自己的 sub-class 调用_
-<br>
-_带两个下划线叫做 private member，只能在 class 内的 sub-class 调用_
-<br>
+![](../image/Encapsulation.png)
 
-- Methods
+- 不带下划线的调用称为 public member，可在 class 内外调用
+- 带一个下划线叫做 protected member，只能在 class 内及自己的 sub-class 调用
+- 带两个下划线叫做 private member，只能在 class 内的 sub-class 调用
+
+
+Methods
   | 实例方法（Instance Method）| 类方法（Class Method）| 静态方法（Static Method）
   | :---: | :---: | :---:
   | 绑定到类的具体实例（对象）上 | 绑定到类本身上，而不是类的实例 | 绑定到类上，但它们与类没有直接的交互
