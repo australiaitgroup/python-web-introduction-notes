@@ -33,15 +33,11 @@
 - [w3schools](https://www.w3schools.com/)
 - [开发者指南](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
 
-<p align='center'><img src='../image/HTML&CSS.png' width='30%' height='30%' /></p>
-
 ### HTML & CSS & JavaScript 的特点
 
 > HTML: 网站基本框架
 > CSS: 美化网站 (color, animation, opacity, etc)
 > JavaScript: 动态 (前后端交互, 功能实现)
-
-<hr>
 
 ### 解决问题实用网站
 
@@ -53,8 +49,6 @@
 
 **_鼠标右键 + inspect/F12_**
 
-<hr>
-
 ### HTML 详解
 
 全称是`Hyper Text Markup Language`
@@ -64,8 +58,6 @@ blog.html -> `http://www.example.com/blog.html`
 **_~~HTML 是编程语言~~, HTML 是标记型语言_**
 
 > 原因: HTML 使用标签(<tag>)来描述文档的内容
-
-<hr>
 
 ### VScode 下载
 
@@ -101,8 +93,6 @@ blog.html -> `http://www.example.com/blog.html`
 
 > `多用 live server, 可以进行网页调试`
 
-<hr>
-
 ### Terminal/ Powershell 创建文件夹
 
 1. cd 到自己选定的目录
@@ -112,7 +102,6 @@ blog.html -> `http://www.example.com/blog.html`
 | :--------------------------------: | :--------------------------------------------------------: |
 | touch file_name, mkdir folder_name | New-Item -ItemType File -Name file_name, mkdir folder_name |
 
-<hr>
 
 ### HTML 基本格式
 
@@ -132,8 +121,6 @@ blog.html -> `http://www.example.com/blog.html`
 
 > content 写的越多, 关键词越多, 增加曝光机会(SEO)
 > responsive web design -> 修改 viewpoint(width=device-width)
-
-<hr>
 
 ### Tag
 
@@ -348,8 +335,6 @@ Label 标签
 可以代替 div, 有助于搜索引擎优化
 
 `<header>, <nav>, <main>, <footer>, <article>, <section>, <aside>, <figure>, etc`
-
-<hr>
 
 ### 作业
 
