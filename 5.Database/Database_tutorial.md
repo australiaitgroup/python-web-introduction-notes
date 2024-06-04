@@ -36,12 +36,10 @@
 
 ## Resources
 
-[class resources](https://github.com/jessieyu1/intro2database)<br>
-[sql practice](https://sqlbolt.com/lesson/select_queries_introduction)
+- [class resources](https://github.com/jessieyu1/intro2database)
+- [sql practice](https://sqlbolt.com/lesson/select_queries_introduction)
 
 ## Database_tutorial
-
-<p align='center'><img src='../image/Database.png' width='30%' height='30%' /></p>
 
 ### 数据库基本概念
 
@@ -181,9 +179,9 @@ VALUES
 
 ### Foreign key constraints
 
-_一个表的 FK 往往是另一个表的 PK. 添加数据时要保证 FK 在另外一张表的 PK 中能找到_
+一个表的 FK 往往是另一个表的 PK. 添加数据时要保证 FK 在另外一张表的 PK 中能找到。
 
-<p align='center'><img src='../image/ER Diagram.png' width='30%' height='20%' /></p>
+![](../image/ER Diagram.png)
 
 ```sql
 -- 成功, 两个FK都能在Cars和Factories的PK中一一对应
@@ -317,7 +315,7 @@ CREATE TABLE Factories_2(
 
 > 如果多个表有关联性(相同 column), 可以用 join 来生成一个具有关联关系的结果集
 
-<p align='center'><img src='../image/different sql join.png' width='80%' height='80%' /></p>
+![](../image/different sql join.png)
 
 #### Crossjoin
 
@@ -367,7 +365,7 @@ WHERE
     类型 = '跑车';
 ```
 
-<p align='center'><img src='../image/union.png' width='80%' height='80%' /></p>
+![](../image/union.png)
 
 #### 使用 union all
 
@@ -387,40 +385,40 @@ WHERE
     类型 = '跑车';
 ```
 
-<p align='center'><img src='../image/union all.png' width='80%' height='80%' /></p>
+![](../image/union all.png)
 
 ### NULL 关键字
 
-> NULL 表示一个缺失值的项, 和 0 或包含空格的字段不同<br>
-> 一般用来做 check constraint (NOT NULL)
+- NULL 表示一个缺失值的项, 和 0 或包含空格的字段不同
+- 一般用来做 check constraint (NOT NULL)
 
 ### sql_mode=only_full_group_by
 
-> 这是 sql 对于 group by 的一个 constraint. 举一个例子
+这是 sql 对于 group by 的一个 constraint. 举一个例子
 
-<p align='center'><img src='../image/create table.png' width='80%' height='80%' /></p>
+![](../image/create table.png)
 
 _这样创建了一个简单的 table, 有 3 个 columns, 6 个 rows_
 
-<p align='center'><img src='../image/table display.png' width='50%' height='50%' /></p>
+![](../image/table display.png)
 
 #### group by one column
 
-<p align='center'><img src='../image/group by one non- aggregated column.png' width='80%' height='80%' /></p>
+![](../image/group by one non- aggregated column.png)
 
-_第一种是只针对品牌分组. 效果就是输出了 3 行. (即使最高价格都相同, 每个组只会输出一行)_
+_第一种是只针对品牌分组. 效果就是输出了 3 行。 (即使最高价格都相同, 每个组只会输出一行)_
 
 #### group by two columns
 
-<p align='center'><img src='../image/group by two non-aggregated columns.png' width='80%' height='80%' /></p>
+![](../image/group by two non-aggregated columns.png)
 
-_第二种是 group by 两个 columns, 相当于用组合方式. 这里和前面例子不同在于, 同一个品牌, 颜色不同,相同 maxprice 全部输出了._
+_第二种是 group by 两个 columns, 相当于用组合方式. 这里和前面例子不同在于, 同一个品牌, 颜色不同,相同 maxprice 全部输出了。_
 
 #### 为什么不能 select two columns, group by one column?
 
 > 只是 group by 一个品牌, 最后应该像第一个例子一样输出 3 行. 问题在于你现在多 select 一个 non-aggragated->颜色. mysql 不知道应该 return 给你 green 还是 red 还是 red
 
-- 所以必须把所有 non-aggregated columns 都加入 group by 中. 抽象一点说就是颜色和 group by 中的品牌没有依赖性. 所以报错
+- 所以必须把所有 non-aggregated columns 都加入 group by 中. 抽象一点说就是颜色和 group by 中的品牌没有依赖性. 所以报错。
 
 #### SQL execution order
 
