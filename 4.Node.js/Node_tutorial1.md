@@ -35,8 +35,6 @@
 
 ## Node_tutorial
 
-<p align='center'><img src='../image/nodejs.png' width='30%' height='30%' /></p>
-
 ### 复习
 
 #### 安装包的指令
@@ -59,7 +57,9 @@ npm start
 
 #### 包版本含义
 
-> 2: major changes<br> 3. minor changes<br> 4. patch changes<br>
+- 2: major changes
+- 3: minor changes
+- 4: patch changes
 
 #### http 和 fs 模块
 
@@ -151,7 +151,7 @@ module.exports = router;
 
 ##### 中间件
 
-<p align='center'><img src='../image/koa.png' width='50%' height='50%' /></p>
+![](../image/koa.png)
 
 > 简单来说, 每一个中间件都有两次处理时机. 在洋葱模型中，每一层相当于一个中间件, 其处理顺序先是 next()前请求(Request, 从外层到内层)然后执行 next()函数，最后是 next()后响应(Response, 从内层到外层)
 
@@ -161,7 +161,7 @@ module.exports = router;
 
 #### json vscode 插件
 
-<p align='center'><img src='../image/JSON_VScode_Extension.png' width='50%' height='50%' /></p>
+![](../image/JSON_VScode_Extension.png)
 
 #### npm 初始化 + 安装包
 
@@ -273,7 +273,7 @@ module.exports = router;
 
 #### router.js solution 2
 
-> 在 writeMessageFile()直接写入{messages}, 就不需要创建每次更新后的 messages array, 因为 push, splice, Object.assign 方法已经修改了 message.json 中的元素. 此外, put 接口中使用 Object.assign 可以避免使用解构和删除操作. 封装三个命名函数 writeMessageFile(), getMessageById(messageId)和 handleErrorMessage(res, messageId)用来实现代码复用.
+> 在 writeMessageFile()直接写入{messages}, 就不需要创建每次更新后的 messages array, 因为 push, splice, Object.assign 方法已经修改了 message.json 中的元素. 此外, put 接口中使用 Object.assign 可以避免使用解构和删除操作。 封装三个命名函数 writeMessageFile(), getMessageById(messageId)和 handleErrorMessage(res, messageId)用来实现代码复用。
 
 ```js
 const express = require("express"),
