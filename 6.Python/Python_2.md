@@ -24,13 +24,7 @@
     - [for 循环](#for-循环)
     - [推荐课程](#推荐课程)
 
-## Resources
-
-[anaconda](https://www.anaconda.com/download/)
-
 ## Python_2
-
-<p align='center'><img src='../image/python.png' width='30%' height='30%' /></p>
 
 ### 安装 Python
 
@@ -38,9 +32,9 @@
 
 #### Anaconda 和 Python
 
-> Anaconda 是 Python 的发行版, 包含超过 1500 个科学包. 装包后, 就可以直接使用预先封装的方法.
+> Anaconda 是 Python 的发行版, 包含超过 1500 个科学包。装包后, 就可以直接使用预先封装的方法。
 
-`collection.abc: 抽象基类(Abstract Base Classes)`
+`collection.abc`: 抽象基类(Abstract Base Classes)
 
 #### Python 调试
 
@@ -92,8 +86,6 @@ setting -> search spell
 }
 ```
 
-<hr>
-
 ### Python 数据类型
 
 > Primitive type(不可变): integer/float/boolean/none/string
@@ -118,29 +110,21 @@ graph TB;
 #### Integer
 
 - Python 对整数的处理方式
-  > 在 Python 中，整数（通常在-5 到 256 之间）是预先创建并缓存起来的,这意味着它们将会有相同的内存地址<br>
-  > 当你改变这些变量的值，使其超出了这个预缓存的范围，Python 会创建一个新的整数对象来表示新的值
-
-<hr>
+  - 在 Python 中，整数（通常在-5 到 256 之间）是预先创建并缓存起来的,这意味着它们将会有相同的内存地址。
+  - 当你改变这些变量的值，使其超出了这个预缓存的范围，Python 会创建一个新的整数对象来表示新的值。
 
 #### Boolean
 
-> 与 integer 类似，a、b 同时赋予 true 或者 false 时地理位置相同
-
-<hr>
+与 integer 类似，a、b 同时赋予 true 或者 false 时地理位置相同。
 
 #### None
 
-> 无论赋值给谁，都只有一个地理位置
-
-<hr>
+无论赋值给谁，都只有一个地理位置。
 
 #### String
 
-> 一开始通过赋值得到的内容会修改地址，而赋值过后任何的修改不会<br>
-> 在 string 后增加字母位数不会修改地址，而增加空格会
-
-<hr>
+- 一开始通过赋值得到的内容会修改地址，而赋值过后任何的修改不会。
+- 在 string 后增加字母位数不会修改地址，而增加空格会。
 
 #### Immutable Mutable Hashable
 
@@ -149,9 +133,9 @@ graph TB;
 | 创建后其状态就不能改变的对象 | 创建后可以改变其状态的对象 | 有一对一的映射并且可以用作字典的键或集合中的元素 |
 |  字符串（str）和整数（int）  | 列表（list）和字典（dict） |            不可变的，它们也是可哈希的            |
 
-- 相互间的联系：
-  > 不可变的对象是可哈希的，因为它们的内容不会改变<br>
-  > 可变对象通常是不可哈希的，因为它们的内容可以改变
+相互间的联系：
+  - 不可变的对象是可哈希的，因为它们的内容不会改变。
+  - 可变对象通常是不可哈希的，因为它们的内容可以改变。
 
 ```python
 a = 1
@@ -167,10 +151,12 @@ print(c is d)  # False
 ```
 
 `id(1) -> 地址信息`
+
 `hash(1) -> hash值`
+
 `hash是用于在散列数据结构中快速查找对象的唯一标识`
 
-> 注意只有 immutable type 才是 hashable.
+> 注意只有 immutable type 才是 hashable。
 
 ```python
 # set中的元素必须是hashable的, 不能直接添加unhashable的list
@@ -184,17 +170,14 @@ c[[1]] = [1]  # error
 c[tuple([1])] = [1]  # correct -> {(1,): [1]}
 ```
 
-<hr>
-
 ### Python 和 JavaScript 的命名差异
 
-<p align='center'><img src='../image/python:js variable declaration.png' width='50%' height='50%' /></p>
+![](../image/python:js variable declaration.png)
 
 - Python: 运用 indentation(缩进)来显示 level
 - JavaScript: 对缩进不太敏感, 更专注传输
 - PEP8 规则: 它是一个编码约定文档，描述了如何编写 Python 代码的风格指南
 
-<br>
 
 |         规则         |                                            内容                                            |
 | :------------------: | :----------------------------------------------------------------------------------------: |
@@ -210,7 +193,8 @@ c[tuple([1])] = [1]  # correct -> {(1,): [1]}
 |       引入模块       | 每个引入应该独立一行，标准库模块、第三方库模块、应用程序指定模块分组导入，组之间用空行分隔 |
 | 表达式和语句中的空格 |                                      避免不必要的空格                                      |
 
-<p align='center'><img src='../image/Python和JavaScript的命名差异2.png' width='50%' height='50%' /></p>
+
+![](../image/Python和JavaScript的命名差异2.png)
 
 |      Python      |         JavaScript         |
 | :--------------: | :------------------------: |
@@ -230,8 +214,6 @@ c[tuple([1])] = [1]  # correct -> {(1,): [1]}
   - //
   - /\* \*/
 
-<hr>
-
 ### 获得包的帮助信息
 
 ```python
@@ -239,24 +221,20 @@ import pygame
 print(help(pygame))
 ```
 
-<hr>
-
 ### and 和 or 的区别
 
-<p align='center'><img src='../image/and-or-not.png' width='50%' height='50%' /></p>
+![](../image/and-or-not.png)
 
-> 两者都是返回停止判断位置的元素
-> and: 有一个 false 就是 false
-> or: 有一个 true 就是 true
+- 两者都是返回停止判断位置的元素。
+- and: 有一个 false 就是 false。
+- or: 有一个 true 就是 true。
 
-`and和or本质上返回一个真正的值, 而不是boolean`
-
-<hr>
+and和or本质上返回一个真正的值, 而不是boolean。
 
 #### for 循环
 
-<p align='center'><img src='../image/for循环.png' width='50%' height='50%' /></p>
+![](../image/for循环.png)
 
 ### 推荐课程
 
-<p align='center'><img src='../image/python_course.png' width='50%' height='50%' /></p>
+![](../image/python_course.png)
