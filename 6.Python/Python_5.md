@@ -41,16 +41,14 @@
 
 ## Resources
 
-[Python_lambda](https://www.w3schools.com/python/python_lambda.asp)<br>
-[Python_decorator](https://foofish.net/python-decorator.html)<br>
-[Python_map](https://www.w3schools.com/python/ref_func_map.asp)<br>
-[Python_filter](https://www.freecodecamp.org/chinese/news/python-filter-function)<br>
-[Python_reduce](https://www.runoob.com/python/python-func-reduce.html)<br>
-[Generator Expression vs List Comprehension](./Generator%20Expression%20vs%20List%20Comprehension.py)
+- [Python_lambda](https://www.w3schools.com/python/python_lambda.asp)
+- [Python_decorator](https://foofish.net/python-decorator.html)
+- [Python_map](https://www.w3schools.com/python/ref_func_map.asp)
+- [Python_filter](https://www.freecodecamp.org/chinese/news/python-filter-function)
+- [Python_reduce](https://www.runoob.com/python/python-func-reduce.html)
+- [Generator Expression vs List Comprehension](./Generator%20Expression%20vs%20List%20Comprehension.py)
 
 ## Python_5
-
-<p align='center'><img src='../image/python.png' width='30%' height='30%' /></p>
 
 #### 封装的概念
 
@@ -59,8 +57,6 @@
 - 封装的主要目的是保护对象内部的状态和实现细节，只允许通过定义好的接口（即公有方法）来访问对象的状态
 - 老师的理解：开发者之间只通过接口进行交流，不需要去管封装里面的内容
 
-<hr>
-
 #### Function 的优势
 
 ##### 模块化
@@ -68,91 +64,75 @@
 - Reusable
 - 模块化之前，每个功能都要重新写一遍内容
 
-<p align='center'><img src='../image/模块化1.png' width='50%' height='50%' /></p>
+![](../image/模块化1.png)
 
 - 模块化之后，所有的功能只需要在写完一遍之后分别调用就好
 
-<p align='center'><img src='../image/模块化2.png' width='50%' height='50%' /></p>
-
-<hr>
+![](../image/模块化2.png)
 
 #### Function Calls and Definition
 
-<p align='center'><img src='../image/Function Calls and Definition.png' width='50%' height='50%' /></p>
-
-<hr>
+![](../image/Function Calls and Definition.png)
 
 #### Positional Arguments
 
 - 即 Arguments 是按顺序出现的
 
-<p align='center'><img src='../image/Positional Arguments.png' width='50%' height='50%' /></p>
+![](../image/Positional Arguments.png)
 
 - input parameters: signature of the function(参数即签名)
 - polymorphism(多态：只要符合位置要求，任何类型的参数均可填入)
 - 但注意不能超过或少于参数数量范围
 
-<p align='center'><img src='../image/Positional Arguments1.png' width='50%' height='50%' /></p>
-
-<hr>
+![](../image/Positional Arguments1.png)
 
 #### Keyword Arguments
 
 - 正常情况下，每个 keyword 对应的参数会按顺序输出
 
-<p align='center'><img src='../image/Keyword Arguments1.png' width='50%' height='50%' /></p>
+![](../image/Keyword Arguments1.png)
 
 - 修改 keyword 关键词会导致报错
 
-<p align='center'><img src='../image/Keyword Arguments2.png' width='50%' height='50%' /></p>
+![](../image/Keyword Arguments2.png)
 
 - 省去一两个 keyword 不会影响输出，系统会按照 Positional Arguments 的顺序继续执行
-
-<p align='center'><img src='../image/Keyword Arguments3.png' width='50%' height='50%' /></p>
+  
+![](../image/Keyword Arguments3.png)
 
 - 注意：当所有 arguments 中只有一个 keyword 时，只能出现在最右边，不然会报错
 
-<p align='center'><img src='../image/Keyword Arguments4.png' width='50%' height='50%' /></p>
-
-<hr>
+![](../image/Keyword Arguments4.png)
 
 #### Default Parameters
 
 - 当定义了默认值时，少输或者不输入内容时系统会自动用默认值补齐
 
-<p align='center'><img src='../image/Default Parameters.png' width='50%' height='50%' /></p>
-
-<hr>
+![](../image/Default Parameters.png)
 
 #### Argument Tuple Packing
 
 - 当不确定 parameter 的个数时，可以采用 packing
 
-<p align='center'><img src='../image/Argument Tuple Packing.png' width='50%' height='50%' /></p>
-
-<hr>
+![](../image/Argument Tuple Packing.png)
 
 #### Argument Dictionary Packing
 
 - 多个 value 变成一个 Dic
 
-<p align='center'><img src='../image/Argument Dictionary Packing.png' width='50%' height='50%' /></p>
-
-<hr>
+![](../image/Argument Dictionary Packing.png)
 
 #### Putting It All Together
 
 - 当所有类型的数据放在一起 packing 时，keyword 类型也要放在最右边 packing
 
-<p align='center'><img src='../image/Putting It All Together.png' width='50%' height='50%' /></p>
-
-<hr>
+![](../image/Putting It All Together.png)
 
 ### lambda function
 
-`lambda function是有返回值的匿名函数, 并且只能执行返回值操作`
+lambda function是有返回值的匿名函数, 并且只能执行返回值操作。
 
-> 提升可读性, 对于一些只调用一次的函数, 没必要定义一个命名函数, 使用 lambda funciton 是较好的.
+> 提升可读性, 对于一些只调用一次的函数, 没必要定义一个命名函数, 使用 lambda funciton 是较好的。
 
 ```python
 # lambda input: expression
@@ -188,7 +168,7 @@ dis.dis(lambda x, y: x + y)
 - 匿名性: 避免命名冲突, 覆盖本地库
 - 内联使用: Lambda 函数通常用于一些只在一个地方被调用一次的操作，避免了为简单操作创建单独的命名函数; 避免覆盖本地库
 
-> lambda 不能直接使用->这种 annotation, 但可以使用 Callable 检查<br>
+> lambda 不能直接使用->这种 annotation, 但可以使用 Callable 检查
 
 ```python
 from typing import Callable
@@ -202,8 +182,8 @@ print(result)
 
 `Higher Order Function`
 
-> 一定是嵌套函数(nested function)<br>
-> 在不修改原始代码的情况下, 对函数或类的功能进行增强或修改
+- 一定是嵌套函数(nested function)
+- 在不修改原始代码的情况下, 对函数或类的功能进行增强或修改
 
 ```python
 from typing import Callable, Tuple
@@ -322,7 +302,7 @@ result2 = multiply(2, 4)
 
 #### Decorator 的其他应用场景
 
-`装饰器在的其他应用场景:`
+装饰器在的其他应用场景:
 
 - Authorization: You can use decorators to check if a user has the permission to execute specific requests.
 - Caching/Memoization: Decorators can be used for caching the results of a function to improve speed. If a function is frequently called with the same parameters, decorators can store the previous results.
@@ -337,7 +317,7 @@ result2 = multiply(2, 4)
 
 #### cProfile
 
-> 提供了一个轻量级的性能分析器，可以用来测量函数调用的时间和调用次数，帮助您识别代码中的瓶颈和优化点
+> 提供了一个轻量级的性能分析器，可以用来测量函数调用的时间和调用次数，帮助您识别代码中的瓶颈和优化点。
 
 ```python
 import cProfile
@@ -374,13 +354,13 @@ from functools import reduce
 print(reduce(lambda x, y: x * y, [1,2,3])) # 6
 ```
 
-**_一般推荐使用 list comprehensive 或 generator expression 而避免使用 map/filter. reduce_**
+**一般推荐使用 list comprehensive 或 generator expression 而避免使用 map/filter. reduce**
 
 ### List comprehension 实现 map/filter/reduce
 
 #### 为什么推荐使用 List comprehension 而不是直接使用 map/filter/reduce?
 
-<p align='center'><img src='../image/List comprehension vs map:filter:reduce.png' /></p>
+![](../image/List comprehension vs map:filter:reduce.png)
 
 #### 使用 List comprehension 实现 map
 
@@ -415,11 +395,11 @@ product = 1
 print([product := product * num for num in [1, 2, 3]][-1]) # 6
 ```
 
-_使用了 python3.8 版本引入的 Assignment Expresions 实现了 reduce 操作. 累乘实际上直接用 reduce 实现起来更容易些, 但对于[简单的情况](#为什么推荐使用list-comprehension而不是直接使用mapfilterreduce), 可以用 List comprehension_
+使用了 python3.8 版本引入的 Assignment Expresions 实现了 reduce 操作. 累乘实际上直接用 reduce 实现起来更容易些, 但对于[简单的情况](#为什么推荐使用list-comprehension而不是直接使用mapfilterreduce), 可以用 List comprehension
 
 #### List comprehension vs map/filter/reduce 总结
 
-`对于简单操作且数据量较少, 用写法简洁的list comprehension好; 数据集庞大且需要复杂处理时, 用map等内置方法能节约内存 (map方法return的是iterator不是iterable)`
+对于简单操作且数据量较少, 用写法简洁的list comprehension好; 数据集庞大且需要复杂处理时, 用map等内置方法能节约内存 (map方法return的是iterator不是iterable)
 
 ### Generator Expression 为什么比 List comprehension 更好?
 
@@ -458,8 +438,6 @@ print(f"使用生成器表达式的sum执行时间: {end_time - start_time} 秒"
 print(sum([x for x in range(3)]))
 print(sum(x for x in range(3)))
 ```
-
-<p align='center'><img src='../image/generator+list() vs list comprehension.png' width='80%' height='50%' /></p>
 
 #### Generator expression vs List comprehension 总结
 
