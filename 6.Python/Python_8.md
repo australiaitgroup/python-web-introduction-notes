@@ -21,12 +21,10 @@
 
 ## Resources
 
-[Class Solution](https://github.com/ElevnLi/SnakeGame16)<br>
-[Solution 2](https://github.com/ElevnLi/SnakeGame15)
+- [Class Solution](https://github.com/ElevnLi/SnakeGame16)
+- [Solution 2](https://github.com/ElevnLi/SnakeGame15)
 
 ## Python_8
-
-<p align='center'><img src='../image/snakegame.png' width='30%' height='30%' /></p>
 
 ### 贪吃蛇项目
 
@@ -331,4 +329,4 @@ git commit -m "xxx"
 git push -u origin featureA
 ```
 
-> 在 github 中使用创建 pull request, 写一些 comments, 分配 reviewers, 等 approval 后, merge 到 main/master branch.
+> 在 github 中使用创建 pull request, 写一些 comments, 分配 reviewers, 等 approval 后, merge 到 main/master branch。
