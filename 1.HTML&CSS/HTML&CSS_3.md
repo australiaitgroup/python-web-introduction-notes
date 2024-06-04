@@ -273,7 +273,7 @@ body {
 3. 为 sticky 的子元素设置 top 属性
 4. 父元素没有 transform
 
-<p align='center'><img src='../image/sticky.png' width='80%' height="800px"/></p>
+![sticky](../image/sticky.png)
 
 https://github.com/ESJiang/JR16-notes/assets/43910771/b7cf21cb-920c-44c1-ba95-0b51070e4b35
 
@@ -309,7 +309,7 @@ https://github.com/ESJiang/JR16-notes/assets/43910771/b7cf21cb-920c-44c1-ba95-0b
 
 <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
 
-<p align='center'><img src='../image/flexbox.png' width='80%' /></p>
+![flexbox](../image/flexbox.png)
 
 **box-model 盒子模型之边框**
 
