@@ -30,8 +30,6 @@
 
 ## HTML & CSS Part 3
 
-<p align='center'><img src='../image/HTML&CSS.png' width='30%' height='30%' /></p>
-
 ### 上节课知识点复习
 
 1. **什么是 Box Model**
@@ -67,8 +65,6 @@
 
    > rgb, hsl, hex
 
-<hr>
-
 ### Pseudo Class Selector
 
 _语法_ -> `选择器:伪类`
@@ -88,11 +84,10 @@ _语法_ -> `选择器:伪类`
 |   :focus   |     聚焦状态     |
 |  :visited  | 已访问的链接状态 |
 
-<hr>
 
 ### 上节课作业 background and borders
 
-<p align="center"><img src="../image/background_border.png" width="80%" /></p>
+![background and border](../image/background_border.png)
 
 #### background 类应用
 
@@ -258,8 +253,6 @@ body {
 - `scale-down`: 选 none 和 contain 尺寸小的显示
 - `inherit`: 继承父级的 object-fit 属性
 
-<hr>
-
 ### Position
 
 **Position 常用的 Property**
@@ -311,8 +304,6 @@ https://github.com/ESJiang/JR16-notes/assets/43910771/b7cf21cb-920c-44c1-ba95-0b
         <figcaption>使用 transform</figcaption>
     </figure>
 </div>
-
-<hr>
 
 ### Flexbox 布局参考资料
 
@@ -443,13 +434,9 @@ div {
 }
 ```
 
-<hr>
-
 ### Grid 布局练习网址
 
-<https://cssgridgarden.com/>
-
-<hr>
+https://cssgridgarden.com
 
 ### Responsive Design: 在多个设备上, 获得更好的视觉体验
 
@@ -551,8 +538,6 @@ h1::after {
   height: 20px;
 }
 ```
-
-<hr>
 
 ## 作业
 
