@@ -24,7 +24,6 @@
         - [router.js](#routerjs)
         - [userRouter.js](#userrouterjs)
         - [journalRouter.js](#journalrouterjs)
-  - [作业](#作业)
 
 ## Resources
 
@@ -284,34 +283,4 @@ journalRouter.post("/events", (req, res) => {
 });
 
 module.exports = journalRouter;
-```
-
-## 作业
-
-1. 写两个 api (retrieve all list + get an event by params)
-
-2. 针对新 data, 写 4 个 api
-
-```js
-let journal = [
-  {
-    events: ["work", "touched tree", "pizza", "running", "television"],
-    squirrel: false,
-  },
-  {
-    events: [
-      "work",
-      "ice cream",
-      "cauliflower",
-      "lasagna",
-      "touched tree",
-      "brushed teeth",
-    ],
-    squirrel: false,
-  },
-  {
-    events: ["weekend", "cycling", "break", "peanuts", "beer"],
-    squirrel: true,
-  },
-];
 ```
